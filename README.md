@@ -13,7 +13,7 @@ The Web Selector Framework is a framework used to collect selectors (ID, XPath, 
 
 To collect selectors from a web page, follow these steps:
 
-1. Import the `getAllSelectors` module from `selectorCollector.js`.
+1. Import the `getAllSelectors` module from `allSelectors.js`.
 2. Call the `getAllSelectors` function providing the URL of the web page you want to process.
 3. Display the results returned by the function.
 

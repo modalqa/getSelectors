@@ -32,11 +32,13 @@ generateSelectorsFromURL(url, elementId)
     .catch(error => {
         console.error("Error:", error);
     });
-
-Result
+```
+## Result
 This framework will produce a JavaScript object containing selectors (ID, XPath, and CSS) of all elements on the web page you provide.
 
 Example result:
+```json
+
 {
   id: {
     element: '#element-id',

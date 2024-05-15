@@ -1,11 +1,15 @@
-const getAllSelectors = require('./Engine/allSelectors');
+const getAllSelectors = require('./Engine/allSelectorAfterLogin');
 
 // Contoh penggunaan:
-const url = "https://www.saucedemo.com";
-getAllSelectors(url)
-    .then(allSelectors => {
-        console.log("All Selectors:", allSelectors);
-    })
-    .catch(error => {
-        console.error("Error:", error);
-    });
+(async () => {
+    const url = 'https://practicetestautomation.com/practice-test-login';
+    const username = 'student';
+    const password = 'Password123';
+    const usernameSelector = '#username';
+    const passwordSelector = '#password';
+    const submitButtonSelector = '#submit';
+    const targetUrl = 'https://practicetestautomation.com/logged-in-successfully/';
+
+    const selectors = await getAllSelectors(url, username, password, usernameSelector, passwordSelector, submitButtonSelector, targetUrl);
+    console.log(selectors);
+})();
